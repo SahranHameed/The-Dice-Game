@@ -1,11 +1,11 @@
 // Dice images for each number (1 to 6)
 const diceImages = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/120px-Dice-1-b.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/120px-Dice-2-b.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dice-3-b.svg/120px-Dice-3-b.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dice-4-b.svg/120px-Dice-4-b.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dice-5-b.svg/120px-Dice-5-b.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Dice-6-b.svg/120px-Dice-6-b.svg.png"
+"images/dice-1.png",
+"images/dice-2.png",
+"images/dice-3.png",
+"images/dice-4.png",
+"images/dice-5.png",
+"images/dice-6.png"
 ];
 
 // Score tracking
@@ -90,6 +90,6 @@ function resetScores() {
   document.getElementById("card1").classList.remove("winner");
   document.getElementById("card2").classList.remove("winner");
 
-  document.getElementById("dice1").src = "https://www.freepngimg.com/thumb/dice/7-dice-png-image.png";
-  document.getElementById("dice2").src = "https://www.freepngimg.com/thumb/dice/7-dice-png-image.png";
+  document.getElementById("dice1").src = "images/dice-1.png";
+  document.getElementById("dice2").src = "images/dice-1.png";
 }
