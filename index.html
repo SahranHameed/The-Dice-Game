@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎲 Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>🎲 Dice Game</h1>
+      <p class="subtitle">Boss Level Challenge 01</p>
+
+      <div class="players">
+
+        <div class="player-card" id="card1">
+          <h2>Player 1</h2>
+          <img src="https://www.freepngimg.com/thumb/dice/7-dice-png-image.png" alt="Dice 1" class="dice-img" id="dice1" />
+          <p class="roll-label">Roll</p>
+          <p class="roll-value" id="roll1">-</p>
+        </div>
+
+        <div class="vs-box">
+          <p class="vs-text">VS</p>
+        </div>
+
+        <div class="player-card" id="card2">
+          <h2>Player 2</h2>
+          <img src="https://www.freepngimg.com/thumb/dice/7-dice-png-image.png" alt="Dice 2" class="dice-img" id="dice2" />
+          <p class="roll-label">Roll</p>
+          <p class="roll-value" id="roll2">-</p>
+        </div>
+
+      </div>
+
+      <p class="result-msg" id="result-msg">Press Roll to Play!</p>
+
+      <button class="roll-btn" onclick="rollDice()">🎲 Roll Dice</button>
+
+      <div class="scoreboard">
+        <div class="score-item">
+          <p class="score-label">Player 1 Wins</p>
+          <p class="score-value" id="wins1">0</p>
+        </div>
+        <div class="score-item">
+          <p class="score-label">Draws</p>
+          <p class="score-value" id="draws">0</p>
+        </div>
+        <div class="score-item">
+          <p class="score-label">Player 2 Wins</p>
+          <p class="score-value" id="wins2">0</p>
+        </div>
+      </div>
+
+      <button class="reset-btn" onclick="resetScores()">🔄 Reset Scores</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

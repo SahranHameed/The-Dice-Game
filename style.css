@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  color: #f5c518;
+  text-shadow: 0 0 20px rgba(245, 197, 24, 0.5);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.player-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.player-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.player-card.winner {
+  border-color: #f5c518;
+  background: rgba(245, 197, 24, 0.15);
+  box-shadow: 0 0 20px rgba(245, 197, 24, 0.4);
+  transform: scale(1.05);
+}
+
+.dice-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.dice-img.rolling {
+  animation: spin 0.4s ease-in-out 3;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(-20deg) scale(1.1); }
+  75%  { transform: rotate(20deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.roll-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.roll-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5c518;
+}
+
+.vs-box {
+  padding: 1rem;
+}
+
+.vs-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.result-msg {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  min-height: 40px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.result-msg.win-p1 { color: #4ade80; }
+.result-msg.win-p2 { color: #60a5fa; }
+.result-msg.draw   { color: #facc15; }
+
+.roll-btn {
+  background: #f5c518;
+  color: #1a1a2e;
+  border: none;
+  padding: 14px 48px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.roll-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5);
+}
+
+.roll-btn:active {
+  transform: scale(0.97);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.score-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  min-width: 110px;
+}
+
+.score-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5c518;
+}
+
+.reset-btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #888;
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.reset-btn:hover {
+  border-color: #f5c518;
+  color: #f5c518;
+}
