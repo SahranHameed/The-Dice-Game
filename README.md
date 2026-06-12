@@ -79,7 +79,7 @@ open index.html
 ## 📸 Screenshot
 
 > Add a screenshot of the project here!
-![Dice Game Screenshot](screenshot.png)
+![Dice Game Screenshot](Screenshot.png)
 
 
 ---
