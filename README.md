@@ -1,5 +1,9 @@
 # 🎲 Dice Game — Boss Level Challenge 01
 
+🚀 Live Demo: https://sahranhameed.github.io/The-Dice-Game/
+
+## 📌 About the Project
+
 A fun two-player dice rolling game built with **HTML, CSS, and JavaScript** as part of the MERN Stack Development training — Boss Level Challenge 01.
 
 ---
@@ -39,10 +43,21 @@ A fun two-player dice rolling game built with **HTML, CSS, and JavaScript** as p
 ## 📁 Project Structure
 
 ```
-dice-game/
-├── index.html      # Main HTML file
-├── style.css       # Styling & animations
-└── index.js        # Game logic
+The-Dice-Game/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── images/
+    ├── dice-1.png
+    ├── dice-2.png
+    ├── dice-3.png
+    ├── dice-4.png
+    ├── dice-5.png
+    ├── dice-6.png
+    └── dice-start.png
+
 ```
 
 ---
@@ -63,7 +78,9 @@ open index.html
 
 ## 📸 Screenshot
 
-> Add your screenshot here after running the project!
+> Add a screenshot of the project here!
+![Dice Game Screenshot](screenshot.png)
+
 
 ---
 
