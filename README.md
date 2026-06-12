@@ -39,10 +39,20 @@ A fun two-player dice rolling game built with **HTML, CSS, and JavaScript** as p
 ## 📁 Project Structure
 
 ```
-dice-game/
+The-Dice-Game/
+│
 ├── index.html      # Main HTML file
 ├── style.css       # Styling & animations
 └── index.js        # Game logic
+│
+└── images/
+    ├── dice-1.png
+    ├── dice-2.png
+    ├── dice-3.png
+    ├── dice-4.png
+    ├── dice-5.png
+    ├── dice-6.png
+    └── dice-start.png
 ```
 
 ---
